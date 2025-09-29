@@ -46,7 +46,7 @@ prevBtn.addEventListener('click', () => {
 
 updateCarousel(); 
 
-const WEATHER_API_KEY = '459b93247d43597a2563521ea8a1f4ea'; 
+const WEATHER_API_KEY = 'YOUR_API_KEY'; 
 const weatherDetailsDiv = document.getElementById('weather-details');
 const searchBtn = document.getElementById('search-btn');
 const cityInput = document.getElementById('city-input');
@@ -120,4 +120,5 @@ generateJokeBtn.addEventListener('click', fetchJokeData);
 
 document.addEventListener('DOMContentLoaded', () => {
     weatherDetailsDiv.innerHTML = `<p>Enter a city name and click 'Search' to get started.</p>`;
+
 });
