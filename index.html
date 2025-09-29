@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="glass-panel">
+            <h1>Welcome to Our Interactive World</h1>
+            <p>Experience advanced styling, dynamic content, and seamless responsiveness.</p>
+            <a href="#carousel-section" class="btn">Explore Features</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="carousel-section" class="content-section">
+            <h2>Our Gallery</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="https://picsum.photos/id/1018/800/400" 
+                         alt="Forest Landscape" 
+                         class="carousel-img active"
+                         data-description="A tranquil view of a dense pine forest reflecting perfectly in the still lake water below. Perfect for a quiet escape.">
+                    
+                    <img src="https://picsum.photos/id/1015/800/400" 
+                         alt="Mountain View" 
+                         class="carousel-img"
+                         data-description="Majestic mountain peaks reaching into the clouds, showcasing the raw power and beauty of nature. An inspirational view.">
+                    
+                    <img src="https://picsum.photos/id/1019/800/400" 
+                         alt="City at Night" 
+                         class="carousel-img"
+                         data-description="A vibrant cityscape illuminated by thousands of lights after dusk. This photo captures the energy and complexity of urban life.">
+                    
+                    <img src="https://picsum.photos/id/1039/800/400" 
+                         alt="Desert Road" 
+                         class="carousel-img"
+                         data-description="An endless road cutting through a dry, barren desert landscape under a clear sky. Symbolizes journeys and new beginnings.">
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+                <div class="carousel-dots"></div>
+            </div>
+            
+            <div id="carousel-description" style="text-align: center; margin-top: 20px; font-size: 1.1em; color: #555;">
+                A tranquil view of a dense pine forest reflecting perfectly in the still lake water below. Perfect for a quiet escape.
+            </div>
+
+        </section>
+
+        <section id="api-data-section" class="content-section">
+            <h2>Real-time Updates</h2>
+            <div class="api-panels">
+                
+                <div class="api-card" id="weather-card"> 
+                    <h3>Weather Forecast</h3>
+                    <div class="weather-input">
+                        <input type="text" id="city-input" placeholder="Enter city name (e.g., Tokyo)">
+                        <button id="search-btn">Search</button>
+                    </div>
+                    <div id="weather-details">
+                        <p>Enter a city and click 'Search' to see the weather.</p>
+                    </div>
+                </div>
+                
+                <div class="api-card" id="joke-card">
+                    <h3>Joke of the Day</h3>
+                    <div id="joke-output">
+                        <p>Click the button below for a random joke!</p>
+                    </div>
+                    <button id="generate-joke-btn">Generate a Joke</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Modern Interactive Page. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
